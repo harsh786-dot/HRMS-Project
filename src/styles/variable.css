@@ -1,0 +1,38 @@
+:root {
+    /* Font Family */
+    --font-primary: 'Lexend', sans-serif;
+
+    /* Font Sizes */
+    --font-xs: 16px;
+    --font-sm: 18px;
+    --font-md: 21px;
+    --font-lg: 24px;
+    --font-xl: 26px;
+    --font-heading: 32px;
+    --font-lg-heading: 39px;
+
+    /* Font Weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* Line Heights */
+    --line-tight: 1.3;
+    --line-normal: 1.5;
+    --line-relaxed: 1.75;
+
+    /* Colors */
+    --color-logo: #8D75F5;
+    --color-primary: #7152F3;
+    --color-button: #7152F31A;
+    --color-heading-text: #16151C;
+    --color-para-text: #A2A1A8;
+    --color-white: #FFFFFF;
+    --color-search: #8A8D91;
+    --color-background: #7152F30D;
+    --color-green-background: #30BE82;
+    --color-status-red: #F45B69;
+    --color-status-green: #3FC28A;
+    --color-status-yellow: #EFBE12;
+}

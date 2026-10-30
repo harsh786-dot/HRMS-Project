@@ -1,0 +1,95 @@
+.department-card {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #A2A1A833;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.department-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a2a1a81a;
+}
+
+.department-card-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #16151c;
+}
+
+.department-card-header p {
+    margin: 3px 0 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #A2A1A8;
+}
+
+.view-all-btn {
+    border: none;
+    background: transparent;
+    color: #7152f3;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
+}
+
+.department-employees {
+    display: flex;
+    flex-direction: column;
+}
+
+.department-employee {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.employee-info img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.employee-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #16151C;
+}
+
+.employee-info p {
+    margin: 2px 0 0;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #A2A1A8;
+}
+
+.department-employee > svg {
+    flex-shrink: 0;
+    color: #16151c;
+}

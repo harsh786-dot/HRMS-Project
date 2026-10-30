@@ -1,0 +1,136 @@
+.filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A2A1A833;
+    backdrop-filter: blur(6px);
+    z-index: 999;
+}
+
+.filter-popup {
+    width: auto;
+    padding: 25px 18px 15px;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px #A2A1A833;
+    padding: 30px;
+}
+
+.filter-container {
+    width: auto;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.filter-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-title {
+    padding: 20px 0 20px;
+}
+
+.filter-title h2 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #16151C;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.filter-container h1 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #16151C;
+    font-weight: 600;
+    border-bottom: 1px solid #A2A1A81A;
+    padding-bottom: 40px;
+}
+
+
+.checkbox-filter {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0 20px;
+}
+
+.checkbox-input {
+    display: flex;
+    gap: 8px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    align-items: center;
+}
+
+.selec-type h2 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #16151C;
+    font-weight: 600;
+}
+
+.department-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 30px;
+}
+
+.department-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.department-list input {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-input input {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.department-list input[type="checkbox"],
+.checkbox-input input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: #7152F3;
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+
+.department-list,
+.checkbox-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.department-list label,
+.department-list span,
+.checkbox-input label,
+.checkbox-input span {
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.layouts-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.lay-sidebar {
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.lay-main {
+  width: 80%;
+  min-width: 0;
+}
+
+.lay-header {
+  width: 100%;
+}
+
+.lay-content {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,86 @@
+.leave-container{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-uploads{
+    width: 100%;
+    height: auto;
+    border: 1px solid #A2A1A833;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.profile-leave{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #A2A1A833;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.leave-profile-data h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 45px;
+
+}
+
+.leave-profile-data h4{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.leave-btn{
+    padding: 20px;
+    position: relative;
+    left: 90%;
+
+}
+
+.leave-btn button{
+    width: 150px;
+    height: 50px;
+    background-color: #7152F3;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.leave-lists{
+    background-color: #A2A1A80D;
+    padding: 20px;
+}
+
+.leave-lists ul{
+    display: flex;
+    gap: 30px;
+
+}
+
+.leave-lists li{
+    list-style-type: none;  
+    font-size: 21px;
+    font-weight: 300; 
+    line-height: 25px; 
+    color: #A2A1A8;
+    cursor: pointer;
+}
+
+.leave-lists li.active{
+    color: #7152F3;
+    border-bottom: 2px solid #7152F3;
+}

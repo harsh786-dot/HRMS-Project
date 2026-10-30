@@ -1,0 +1,319 @@
+
+.leave-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.leave-modal {
+    width: 100%;
+    max-width: 700px;
+    max-height: 95vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    color: #252a35;
+}
+
+.leave-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.leave-modal-header h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.leave-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: none;
+    background: transparent;
+    color: #999999;
+    cursor: pointer;
+}
+
+.leave-close-btn:hover {
+    color: #333333;
+}
+
+.leave-modal-body {
+    padding: 20px 28px 30px;
+}
+
+.leave-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.leave-field > label {
+    color: #7b8190;
+    font-size: 14px;
+}
+
+.leave-field > label span {
+    color: #ff514b;
+}
+
+.leave-select-wrapper {
+    position: relative;
+}
+
+.leave-select-wrapper select {
+    width: 100%;
+    height: 68px;
+    padding: 23px 42px 10px 14px;
+    appearance: none;
+    border: 1px solid #e0e3e9;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #303544;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.leave-select-wrapper svg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #737987;
+}
+
+.leave-select-wrapper select:focus,
+.leave-date-input input:focus,
+.leave-reason-field textarea:focus {
+    border-color: #6865ff;
+}
+
+.leave-section-title {
+    margin: 12px 0 18px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leave-radio-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.leave-radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.leave-radio-option input {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    accent-color: #6965ff;
+    cursor: pointer;
+}
+
+.leave-date-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leave-date-fields {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    min-width: 0;
+}
+
+.leave-date-field {
+    flex: 1;
+    min-width: 0;
+}
+
+.leave-date-input {
+    position: relative;
+}
+
+.leave-date-input input {
+    width: 100%;
+    min-width: 0;
+    height: 64px;
+    padding: 23px 35px 8px 12px;
+    border: 1px solid #e0e3e9;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #343947;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.leave-date-input svg {
+    display: none;
+}
+
+.leave-day-selector {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 4px;
+    border: 2px solid #6965ff;
+    border-radius: 30px;
+    background: #6965ff;
+}
+
+.leave-day-btn {
+    min-height: 46px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 24px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.leave-day-btn.active {
+    background: #ffffff;
+    color: #303544;
+}
+
+.leave-total-days {
+    margin-top: 14px;
+    padding: 10px 13px;
+    border-radius: 8px;
+    background: #fbe5ed;
+    color: #34313a;
+    font-size: 15px;
+}
+
+.reason-title {
+    margin: 12px 0 8px;
+}
+
+.leave-reason-field {
+    border: 2px solid #e0e3e9;
+    border-radius: 11px;
+    padding: 10px 12px;
+    gap: 4px;
+}
+
+.leave-reason-field:focus-within {
+    border-color: #6965ff;
+}
+
+.leave-reason-field.has-error {
+    border-color: #ff514b;
+}
+
+.leave-reason-field textarea {
+    width: 100%;
+    min-height: 65px;
+    padding: 3px 0;
+    resize: vertical;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #303544;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.leave-reason-field textarea:focus {
+    border-color: transparent;
+}
+
+.leave-reason-field.has-error > label,
+.leave-error {
+    color: #ff514b;
+}
+
+.leave-error {
+    margin: 6px 0 12px 12px;
+    font-size: 14px;
+}
+
+.leave-attachment-field {
+    margin-top: 16px;
+}
+
+.leave-file-input {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 8px 12px;
+    border: 1px solid #e0e3e9;
+    border-radius: 9px;
+}
+
+.leave-file-input input {
+    width: 100%;
+    max-width: 100%;
+    color: #343947;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.leave-file-input input::file-selector-button {
+    margin-right: 8px;
+    padding: 7px 10px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    background: #f5f5f5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.leave-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.leave-modal-footer p {
+    margin: 0;
+    color: #858585;
+    font-size: 14px;
+}
+
+.leave-save-btn {
+    min-width: 76px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    background: #6965ff;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.leave-save-btn:hover {
+    background: #514de5;
+}

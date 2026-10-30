@@ -1,0 +1,137 @@
+.holidays-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.holiday-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.holiday-search {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #A2A1A81A;
+  border-radius: 8px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.holiday-search span {
+  font-size: 35px;
+}
+
+.holiday-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.holiday-search input::placeholder {
+  color: #16151C33;
+}
+
+.add-holiday {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  background: #7152f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-holiday span {
+  font-size: 20px;
+}
+
+.holiday-table {
+  width: 100%;
+  border: 1px solid #A2A1A81A;
+  border-radius: 8px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.holiday-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.5fr;
+  min-height: 44px;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 28px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.holiday-row.past,
+.holiday-row.upcoming {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.holiday-heading {
+  color: #A2A1A8;
+  border-bottom: none;
+}
+
+.holiday-row.past::before,
+.holiday-row.upcoming::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80%;
+  width: 4px;
+}
+
+.holiday-row.past::before {
+  background: #E5E5E5;
+}
+
+.holiday-row.upcoming::before {
+  background: #7152F3;
+}
+
+.holiday-legend {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-top: 14px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.holiday-legend div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.upcoming-dot {
+  background: #7152f3;
+}
+
+.past-dot {
+  background: #e5e5e5;
+}

@@ -1,0 +1,132 @@
+.leave-balance{
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.leave-balance span{
+    font-size: 21px;
+    font-weight: 300;
+    color: #A2A1A8;
+    padding-left: 10px;
+}
+
+.leave-balance {
+    width: 100%;
+    padding: 4px 0;
+    font-family: Arial, sans-serif;
+    color: #252b3a;
+}
+
+.leave-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leave-heading span {
+    color: #A2A1A8;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.leave-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.leave-card {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.leave-card-header {
+    padding: 12px 6px 11px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.leave-card-header h2 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.leave-card-header p {
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.leave-card-body {
+    padding: 8px 4px 6px;
+}
+
+.leave-card-body h3 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.balance-label {
+    margin: 5px 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leave-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 7px;
+    color: #A2A1A8;
+    font-size: 16px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.leave-entitlement {
+    margin: 0;
+    color: #A2A1A8;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.leave-granted{
+    display: flex;
+    gap: 30px;
+    font-size: 21px;
+    line-height: 30px;
+    padding: 10px 0 10px;
+    background-color: #A2A1A80D;
+    margin: 10px 0 10px;
+}
+
+.leave-granted h4{
+    font-weight: 500;
+}
+
+.leave-granted span{
+    font-weight: 300;
+}
+
+.leave-star{
+    font-size: 18px;
+    font-weight: 300;
+    color: #A2A1A8;
+}
+

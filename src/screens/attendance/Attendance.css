@@ -1,0 +1,149 @@
+.attendance-container {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #A2A1A833;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.attendance-header {
+    margin-bottom: 25px;
+}
+
+.attendance-table {
+    width: 100%;
+}
+
+.attendance-row {
+    display: grid;
+    grid-template-columns:
+        1.7fr
+        1.7fr
+        1.5fr
+        1.6fr
+        0.5fr;
+    align-items: center;
+    min-height: 53px;
+    border-bottom: 1px solid #A2A1A81A;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #16151C;
+}
+
+
+.attendance-row:last-child {
+    border-bottom: none;
+}
+
+
+.table-header {
+    min-height: 45px;
+    color: #A2A1A8;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.employee-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+
+.employee-name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 65px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.status.on-time {
+    color: #35B77A;
+    background: #EAF8F2;
+}
+
+
+.status.late {
+    color: #FF5B67;
+    background: #FFF0F1;
+}
+
+.pagination {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.showing-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a2a1a8;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.showing-select select {
+  width: 65px;
+  height: 40px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  padding: 0 10px;
+  outline: none;
+  background: white;
+}
+
+.pagination-info {
+  color: #a2a1a8;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination-buttons button.active {
+  border: 1px solid #7152f3;
+  color: #7152f3;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  background: #f5f3ff;
+}
+
+.pagination-buttons button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

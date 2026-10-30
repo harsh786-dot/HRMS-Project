@@ -1,0 +1,56 @@
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr);
+  gap: 16px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.dashboard-data {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.dashboard-chart {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.dashboard-attendance {
+ grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #A2A1A833;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.dashboard-calendar {
+  width: 80%;
+  min-width: 0;
+  height: auto;
+  box-sizing: border-box;
+  border: 1px solid #A2A1A833;
+  border-radius: 10px;
+  padding: 16px;
+  align-self: start;
+}
+
+.dash-attendance-overview{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

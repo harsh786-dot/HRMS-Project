@@ -1,0 +1,45 @@
+.notification-container{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #A2A1A833;
+    border-radius: 10px;
+}
+
+.notification-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.notification-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.notify-img img{
+    width: 50px;
+    height: 50px;
+    background-color: #A2A1A833;
+    border: none;
+    border-radius: 50%;
+}
+
+.notify-info h3{
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.notify-info p{
+    font-size: 21px;
+    font-weight: 300;
+    color: #A2A1A8;
+}
+
+.notify p{
+    font-size: 21px;
+    font-weight: 300;
+    color: #A2A1A8;
+}

@@ -1,0 +1,124 @@
+.settings-container {
+    width: 100%;
+    border: 1px solid #A2A1A833;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.settings-row {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.settings-row:last-child {
+    border-bottom: none;
+}
+
+
+.settings-info {
+    min-width: 0;
+}
+
+
+.settings-info h3 {
+    margin: 0 0 20px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #16151C;
+}
+
+.settings-info p {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 300;
+    color: #a2a1a8;
+    line-height: 20px;
+}
+
+.settings-select {
+    position: relative;
+    width: 90px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+
+.settings-select select {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: #f7f7f8;
+    border-radius: 10px;
+    padding: 0 25px 0 9px;
+    font-size: 16px;
+    color: #16151c;
+    cursor: pointer;
+}
+
+
+.settings-select svg {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #16151c;
+}
+
+
+.toggle {
+    position: relative;
+    width: 55px;
+    height: 35px;
+    display: inline-block;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.toggle-slider {
+    position: absolute;
+    inset: 0;
+    background: #d9d9d9;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+
+.toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 6px;
+    top: 2px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: 0.25s;
+}
+
+
+.toggle input:checked + .toggle-slider {
+    background: #2fc45d;
+}
+
+
+.toggle input:checked + .toggle-slider::before {
+    transform: translateX(16px);
+}

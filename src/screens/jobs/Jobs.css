@@ -1,0 +1,10 @@
+.jobs-container{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.jobs-header{
+    display: flex;
+    justify-content: space-between;
+}

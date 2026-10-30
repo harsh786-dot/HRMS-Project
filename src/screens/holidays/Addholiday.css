@@ -1,0 +1,53 @@
+.add-holiday {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #A2A1A833;
+    backdrop-filter: blur(6px);
+    z-index: 999;
+}
+
+.addholiday-container{
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.addholiday-container h1 {
+    color: #16151C;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #A2A1A81A;
+
+}
+
+.add-holiday-input{
+    padding-top: 20px ;
+}
+
+.add-holiday-input input{
+    width: 345px;
+    height: 50px;
+    /* border: 1px solid #A2A1A8CC; */
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #8A8D91;
+    border: 1px solid #A2A1A833;
+    border-radius: 10px;
+    
+    
+}
+
+.holiday-btn{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
