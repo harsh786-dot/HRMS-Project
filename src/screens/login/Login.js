@@ -19,14 +19,25 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    
 
     try {
       const result = await dispatch(
         fetchLogin({ email, password })
       ).unwrap();
-      sessionStorage.setItem("isAuthenticated", "true")
-      console.log("Login successful:", result);
-      navigate("/dashboard");
+    // Save authentication status
+sessionStorage.setItem("isAuthenticated", "true");
+
+// Save JWT tokens
+sessionStorage.setItem("accessToken", result.tokens.access);
+sessionStorage.setItem("refreshToken", result.tokens.refresh);
+
+// Save logged-in user information
+sessionStorage.setItem("user", JSON.stringify(result.user));
+
+console.log("Login successful:", result.user);
+
+navigate("/dashboard");
     } catch (err) {
       console.error("Login failed:", err);
     }

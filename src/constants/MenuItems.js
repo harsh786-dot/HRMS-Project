@@ -8,6 +8,7 @@ const MENU_ITEMS = [
         { name: "Candidates", path: "/dashboard/candidates", icon: "" },
         { name: "Leaves", path: "/dashboard/leaves", icon: "" },
         { name: "Holidays", path: "/dashboard/holidays", icon: "" },
+        { name: "Messages", path: "/dashboard/messages", icon: "" },
         { name: "Settings", path: "/dashboard/settings", icon: "" },
     ];
 

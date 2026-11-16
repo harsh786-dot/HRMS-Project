@@ -14,7 +14,8 @@ import summaryReducer from "../features/summarySlice/SummarySlice";
 import attendanceOverviewReducer from "../features/attendanceOverviewSlice/AttendanceOverviewSlice";
 import candidateReducer from "../features/candidateSlice/CandidateSlice";
 import registerReducer from "../features/registerSlice/RegisterSlice";
-import departmentReducer from "../features/departmentSlice/DepartmentSlice"
+import departmentReducer from "../features/departmentSlice/DepartmentSlice";
+import chatReducer from "../features/chatSlice/ChatSlice";
 
 export const store = configureStore({
   reducer: {
@@ -34,5 +35,6 @@ export const store = configureStore({
     candidate: candidateReducer,
     register: registerReducer,
     department: departmentReducer,
+    chat: chatReducer,
   }, 
 });
